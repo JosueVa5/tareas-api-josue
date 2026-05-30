@@ -13,7 +13,6 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
-# Application definition
 INSTALLED_APPS = [
     'django_prometheus',
     'django.contrib.admin',
@@ -57,7 +56,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'config.wsgi.application'
 
-# Database
 DATABASES = {
     'default': {
         'ENGINE': 'django_prometheus.db.backends.postgresql',
@@ -69,7 +67,6 @@ DATABASES = {
     }
 }
 
-# Password validation
 AUTH_PASSWORD_VALIDATORS = [
     {'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator'},
     {'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator'},
@@ -77,20 +74,16 @@ AUTH_PASSWORD_VALIDATORS = [
     {'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator'},
 ]
 
-# Internationalization
 LANGUAGE_CODE = 'en-us'
 TIME_ZONE = 'UTC'
 USE_I18N = True
 USE_TZ = True
 
-# Static files
 STATIC_URL = 'static/'
 
-# Prometheus - Buckets de latencia
 PROMETHEUS_LATENCY_BUCKETS = (
     0.01, 0.025, 0.05, 0.075, 0.1,
     0.25, 0.5, 0.75, 1.0, 2.5,
     5.0, 7.5, 10.0, 25.0, 50.0,
     75.0, float('inf'),
 )
-SECRET_KEY = 'django-insecure-taf3gk(u%f%9@y8$l+nda$#9%v&2iv%ehol9$*o8c+npjc0$i^'  # noqa: E501
