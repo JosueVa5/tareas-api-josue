@@ -5,4 +5,4 @@ from .views import TareaViewSet
 router = DefaultRouter()
 router.register(r'tareas', TareaViewSet)
 
-urlpatterns = router.urls 
+urlpatterns = router.urls

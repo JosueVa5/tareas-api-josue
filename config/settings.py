@@ -93,3 +93,4 @@ PROMETHEUS_LATENCY_BUCKETS = (
     5.0, 7.5, 10.0, 25.0, 50.0,
     75.0, float('inf'),
 )
+    
