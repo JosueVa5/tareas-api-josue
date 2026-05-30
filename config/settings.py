@@ -7,7 +7,9 @@ from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-SECRET_KEY = 'django-insecure-taf3gk(u%f%9@y8$l+nda$#9%v&2iv%ehol9$*o8c+npjc0$i^'  # noqa: E501
+SECRET_KEY = (
+    'django-insecure-taf3gk(u%f%9@y8$l+nda$#9%v&2iv%ehol9$*o8c+npjc0$i^'
+)
 
 DEBUG = True
 
@@ -68,7 +70,7 @@ DATABASES = {
 }
 
 AUTH_PASSWORD_VALIDATORS = [
-    {'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator'},
+    {'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator'},  # noqa: E501
     {'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator'},
     {'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator'},
     {'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator'},
