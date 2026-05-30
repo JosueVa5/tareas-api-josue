@@ -7,7 +7,7 @@ from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-SECRET_KEY = 'django-insecure-taf3gk(u%f%9@y8$l+nda$#9%v&2iv%ehol9$*o8c+npjc0$i^'
+SECRET_KEY = 'django-insecure-taf3gk(u%f%9@y8$l+nda$#9%v&2iv%ehol9$*o8c+npjc0$i^'  # noqa: E501
 
 DEBUG = True
 
@@ -93,4 +93,3 @@ PROMETHEUS_LATENCY_BUCKETS = (
     5.0, 7.5, 10.0, 25.0, 50.0,
     75.0, float('inf'),
 )
-    
