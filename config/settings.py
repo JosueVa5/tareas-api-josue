@@ -93,3 +93,4 @@ PROMETHEUS_LATENCY_BUCKETS = (
     5.0, 7.5, 10.0, 25.0, 50.0,
     75.0, float('inf'),
 )
+SECRET_KEY = 'django-insecure-taf3gk(u%f%9@y8$l+nda$#9%v&2iv%ehol9$*o8c+npjc0$i^'  # noqa: E501
